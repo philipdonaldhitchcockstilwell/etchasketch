@@ -1,0 +1,150 @@
+/* Properties for body of page */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for drawing grid */
+#gridContainer {
+    display: grid;
+    width: 50vw;
+    height: 50vw;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    border: 8px solid rgb(241, 160, 160);
+    background-color: white;
+    transition: 0.8s;
+    margin-top: 30px;
+}
+
+/* Hover properties for drawing grid */
+#gridContainer:hover {
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
+    transform: scale(1.005);
+}
+
+/* Properties for individual squares of the grid */
+.gridsquare {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Hover properties for grid squares */
+.gridsquare:hover {
+    border: 2px solid rgb(228, 138, 138);
+}
+
+/* Container for grid-size panel */
+#settingsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Input field for grid-size */
+#gsize {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-size: 40px;
+    font-family: 'Kalam', cursive;
+    transition: 0.7s;
+    background-color: pink;
+    color: white;
+}
+
+#gsize:hover {
+    transform: scale(1.2);
+}
+
+#gsizelabel {
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+}
+
+::placeholder {
+    color:white;
+    opacity: 1;
+}
+
+/* Input field focus properties */
+#gsize:focus {
+    outline: none;
+}
+
+/* Remove placeholder when typing custom value */
+#gsize:focus::placeholder {
+    color: transparent;
+}
+
+#setValue {
+    background:linear-gradient(to bottom, #d6b4d6 5%, #ffabab 100%);
+    background-color:#d6b4d6;
+    border:3px solid #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:18px;
+    font-weight:bold;
+    padding:14px 32px;
+    text-decoration:none;
+}
+
+#setValue:active {
+    outline: none;
+}
+
+/* Color picker container properties */
+#colorPicker {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5vw;
+    border: 3px solid white;
+    transition: 0.8s;
+    
+}
+
+/* Color picker container hover properties */
+#colorPicker:hover {
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* Properties for color picker squares */
+.palette {
+    height: 5vw;
+    width: 5vw;
+    border: 3px solid white;
+}
+
+/* Individual color assignments for squares */
+#red {
+    background-color: rgb(230, 113, 113);
+}
+
+#blue {
+    background-color: rgb(148, 148, 219);
+}
+
+#green {
+    background-color: rgb(131, 224, 131);
+}
+
+#yellow {
+    background-color: rgb(255, 217, 94);
+}
