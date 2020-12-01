@@ -135,16 +135,36 @@ body {
 /* Individual color assignments for squares */
 #red {
     background-color: rgb(230, 113, 113);
+    transition: 1s;
+}
+
+#red:hover {
+    transform: scale(1.05);
 }
 
 #blue {
     background-color: rgb(148, 148, 219);
+    transition: 1s;
+}
+
+#blue:hover {
+    transform: scale(1.05);
 }
 
 #green {
     background-color: rgb(131, 224, 131);
+    transition: 1s;
+}
+
+#green:hover {
+    transform: scale(1.05);
 }
 
 #yellow {
     background-color: rgb(255, 217, 94);
+    transition: 1s;
+}
+
+#yellow:hover {
+    transform: scale(1.05);
 }
